@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-28 15:00+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\home\templates\base.html:10 .\home\templates\base.html:17
+msgid "Car dealership"
+msgstr "Avtosalon"
+
+#: .\home\templates\base.html:20
+msgid "Cars"
+msgstr "Avtomobillar"
+
+#: .\home\templates\base.html:21 .\price\templates\price.html:4
+#: .\price\templates\price.html:8
+msgid "Price list"
+msgstr "Narxlar roʻyxati"
+
+#: .\home\templates\home.html:6
+msgid "Car catalog"
+msgstr "Avtomobillar katalogi"
+
+#: .\home\templates\home.html:10 .\home\templates\home.html:11
+#: .\price\templates\price.html:12 .\price\templates\price.html:13
+msgid "Search by brand or model"
+msgstr "Marka yoki model boʻyicha qidirish"
+
+#: .\home\templates\home.html:13 .\price\templates\price.html:22
+msgid "Brand"
+msgstr "Marka"
+
+#: .\home\templates\home.html:14
+msgid "All brands"
+msgstr "Barcha markalar"
+
+#: .\home\templates\home.html:20
+msgid "Sort"
+msgstr "Saralash"
+
+#: .\home\templates\home.html:21
+msgid "Default order"
+msgstr "Standart tartib"
+
+#: .\home\templates\home.html:22
+msgid "Price: low to high"
+msgstr "Avval arzonlari"
+
+#: .\home\templates\home.html:23
+msgid "Price: high to low"
+msgstr "Avval qimmatlari"
+
+#: .\home\templates\home.html:27 .\price\templates\price.html:16
+msgid "Found"
+msgstr "Topildi"
+
+#: .\home\templates\home.html:34 .\price\templates\price.html:32
+msgid "UZS"
+msgstr "soʻm"
+
+#: .\home\templates\home.html:37
+msgid "Read more"
+msgstr "Batafsil"
+
+#: .\home\templates\home.html:37
+msgid "Hide"
+msgstr "Yashirish"
+
+#: .\home\templates\home.html:42 .\price\templates\price.html:39
+msgid "Nothing found"
+msgstr "Hech narsa topilmadi"
+
+#: .\price\templates\price.html:23
+msgid "Model"
+msgstr "Model"
+
+#: .\price\templates\price.html:24
+msgid "Price"
+msgstr "Narx"
+
+#~ msgid "Description"
+#~ msgstr "Tavsif"

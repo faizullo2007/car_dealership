@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% translate "Price list" %}{% endblock %}
+
+{% block content %}
+
+<h1 class="title">{% translate "Price list" %}</h1>
+
+<div class="toolbar">
+    <input type="search" id="search" class="field field--search"
+           placeholder="{% translate 'Search by brand or model' %}"
+           aria-label="{% translate 'Search by brand or model' %}">
+</div>
+
+<p class="count">{% translate "Found" %}: <span id="count">{{ price|length }}</span></p>
+
+<div class="table-wrap">
+    <table class="table">
+        <thead>
+            <tr>
+                <th><button type="button" class="sort" data-sort="brand">{% translate "Brand" %}</button></th>
+                <th><button type="button" class="sort" data-sort="model">{% translate "Model" %}</button></th>
+                <th class="table__price"><button type="button" class="sort asc" data-sort="price">{% translate "Price" %}</button></th>
+            </tr>
+        </thead>
+        <tbody data-list>
+            {% for p in price %}
+                <tr data-item data-brand="{{ p.name }}" data-model="{{ p.model }}" data-price="{{ p.price }}">
+                    <td>{{ p.name }}</td>
+                    <td>{{ p.model }}</td>
+                    <td class="table__price"><span class="price">{{ p.price }}</span> {% translate "UZS" %}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<p class="empty" id="empty" hidden>{% translate "Nothing found" %}</p>
+
+{% endblock %}

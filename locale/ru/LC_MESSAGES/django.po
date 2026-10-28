@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-28 15:00+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\home\templates\base.html:10 .\home\templates\base.html:17
+msgid "Car dealership"
+msgstr "Автосалон"
+
+#: .\home\templates\base.html:20
+msgid "Cars"
+msgstr "Автомобили"
+
+#: .\home\templates\base.html:21 .\price\templates\price.html:4
+#: .\price\templates\price.html:8
+msgid "Price list"
+msgstr "Прайс-лист"
+
+#: .\home\templates\home.html:6
+msgid "Car catalog"
+msgstr "Каталог автомобилей"
+
+#: .\home\templates\home.html:10 .\home\templates\home.html:11
+#: .\price\templates\price.html:12 .\price\templates\price.html:13
+msgid "Search by brand or model"
+msgstr "Поиск по марке или модели"
+
+#: .\home\templates\home.html:13 .\price\templates\price.html:22
+msgid "Brand"
+msgstr "Марка"
+
+#: .\home\templates\home.html:14
+msgid "All brands"
+msgstr "Все марки"
+
+#: .\home\templates\home.html:20
+msgid "Sort"
+msgstr "Сортировка"
+
+#: .\home\templates\home.html:21
+msgid "Default order"
+msgstr "По умолчанию"
+
+#: .\home\templates\home.html:22
+msgid "Price: low to high"
+msgstr "Сначала дешёвые"
+
+#: .\home\templates\home.html:23
+msgid "Price: high to low"
+msgstr "Сначала дорогие"
+
+#: .\home\templates\home.html:27 .\price\templates\price.html:16
+msgid "Found"
+msgstr "Найдено"
+
+#: .\home\templates\home.html:34 .\price\templates\price.html:32
+msgid "UZS"
+msgstr "сум"
+
+#: .\home\templates\home.html:37
+msgid "Read more"
+msgstr "Подробнее"
+
+#: .\home\templates\home.html:37
+msgid "Hide"
+msgstr "Скрыть"
+
+#: .\home\templates\home.html:42 .\price\templates\price.html:39
+msgid "Nothing found"
+msgstr "Ничего не найдено"
+
+#: .\price\templates\price.html:23
+msgid "Model"
+msgstr "Модель"
+
+#: .\price\templates\price.html:24
+msgid "Price"
+msgstr "Цена"
+
+#~ msgid "Description"
+#~ msgstr "Описание"

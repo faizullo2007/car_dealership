@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+
+<h1 class="title">{% translate "Car catalog" %}</h1>
+
+<div class="toolbar">
+    <input type="search" id="search" class="field field--search"
+           placeholder="{% translate 'Search by brand or model' %}"
+           aria-label="{% translate 'Search by brand or model' %}">
+
+    <select id="brand" class="field" aria-label="{% translate 'Brand' %}">
+        <option value="">{% translate "All brands" %}</option>
+        {% for brand in brands %}
+            <option value="{{ brand }}">{{ brand }}</option>
+        {% endfor %}
+    </select>
+
+    <select id="sort" class="field" aria-label="{% translate 'Sort' %}">
+        <option value="">{% translate "Default order" %}</option>
+        <option value="asc">{% translate "Price: low to high" %}</option>
+        <option value="desc">{% translate "Price: high to low" %}</option>
+    </select>
+</div>
+
+<p class="count">{% translate "Found" %}: <span id="count">{{ price|length }}</span></p>
+
+<div class="cars" data-list>
+    {% for p in price %}
+        <article class="car" data-item data-brand="{{ p.name }}" data-model="{{ p.model }}" data-price="{{ p.price }}">
+            <p class="car__brand">{{ p.name }}</p>
+            <h2 class="car__model">{{ p.model }}</h2>
+            <p class="car__price"><span class="price">{{ p.price }}</span> {% translate "UZS" %}</p>
+            <p class="car__desc">{{ p.description }}</p>
+            <button type="button" class="car__more"
+                    data-more="{% translate 'Read more' %}" data-less="{% translate 'Hide' %}">{% translate "Read more" %}</button>
+        </article>
+    {% endfor %}
+</div>
+
+<p class="empty" id="empty" hidden>{% translate "Nothing found" %}</p>
+
+{% endblock %}

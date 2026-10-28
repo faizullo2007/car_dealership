@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+{% with page=request.resolver_match.url_name %}
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% translate "Car dealership" %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header__inner">
+        <a class="logo" href="{% url 'home' %}">{% translate "Car dealership" %}</a>
+
+        <nav class="nav">
+            <a href="{% url 'home' %}" class="nav__link{% if page == 'home' %} active{% endif %}">{% translate "Cars" %}</a>
+            <a href="{% url 'price' %}" class="nav__link{% if page == 'price' %} active{% endif %}">{% translate "Price list" %}</a>
+        </nav>
+
+        <div class="lang">
+            {% for code, name in LANGUAGES %}
+                {% language code %}<a href="{% url page %}" class="lang__link{% if code == LANGUAGE_CODE %} active{% endif %}">{{ code|upper }}</a>{% endlanguage %}
+            {% endfor %}
+        </div>
+    </div>
+</header>
+
+<main class="container main">
+    {% block content %}{% endblock %}
+</main>
+
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
+{% endwith %}
